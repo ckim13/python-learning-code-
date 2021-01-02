@@ -1,0 +1,10 @@
+###controlling execution with the break statement example 
+Value = input ("Type less then 6 characters: ") ##the input finction allows the end user to input 
+LetterNum = 1 ##
+for Letter in Value:
+	print("Letter ", LetterNum, " is ", Letter )
+	LetterNum+=1 #note thati note the if function must match the 'for' function## 
+	if LetterNum > 6:
+		print ("Error too many letters!")
+		break #the 'break' function breaks out of the loop and tells the application to stop executing 
+        #meaning that it tells the application to stop after the function is done executing##
