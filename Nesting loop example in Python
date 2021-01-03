@@ -1,0 +1,15 @@
+#Nesting Loop Python example, which makes a quick reference multiplication table up to 10 #
+X = 1  #variable 1#
+Y = 1  #variable 2#
+print ( '{:>4}'.format(' '), end= ' ')  #the '{:>4} determines the size of the  'colum
+for X in range(1, 11):
+	print ('{:>4}'.format(X), end= ' ')
+print () 
+for X in range(1, 11):
+	print ( '{:>4}'.format(' '), end= ' ')
+	while Y <= 10: 
+		print ( '{:>4}'.format( X * Y ), end= ' ') # multiplies X times Y# 
+		Y+=1
+	print ()
+	Y=1
+  # When executed the code should display a very simply math table# 
